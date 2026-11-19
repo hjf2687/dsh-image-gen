@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Image Gen",
+    "description": "Lets the AI generate images from an API inside the conversation (text-to-image and reference-image edits, where a reference can be the latest image in the chat). Multiple endpoints, async polling providers, request-body templates and result paths; images are saved to disk with prompt metadata and returned to the chat, with a sidebar panel for endpoints, models and the gallery."
+  }
+}

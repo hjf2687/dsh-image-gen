@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Image generation">
+  <defs>
+    <linearGradient id="ig-bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="ig-sky" x1="14" y1="20" x2="50" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.72"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#ig-bg)"/>
+  <rect x="12.5" y="18.5" width="39" height="27" rx="5.5" fill="none" stroke="url(#ig-sky)" stroke-width="3"/>
+  <circle cx="23.5" cy="27.5" r="3.2" fill="#ffffff" fill-opacity="0.92"/>
+  <path d="M15.5 41.5l8.2-7.6 6.2 5.4 6.8-7.1 8.8 9.3" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46.5 12.5l1.6 4.2 4.4 1.6-4.4 1.6-1.6 4.2-1.6-4.2-4.4-1.6 4.4-1.6z" fill="#ffffff" fill-opacity="0.9"/>
+</svg>

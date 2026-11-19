@@ -1,0 +1,50 @@
+{
+  "name": "dsh-image-gen",
+  "version": "0.4.0",
+  "description": "DSH 生图插件：让 AI 在对话里直接调生图接口出图（文生图 + 参考图改图，参考图可直接引用对话里最近的图 @last，改图自动沿用参考图比例）。工具查询与配置分离（image_config / image_admin）；支持多接入点、异步任务轮询、请求体模板与结果取值路径；图片落盘并附提示词元数据、回传对话，侧边栏「生图」面板管理接入点/模型与历史画廊，支持拖拽上传参考图。",
+  "type": "module",
+  "main": "lib/plugin.js",
+  "exports": {
+    ".": "./lib/plugin.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "image",
+    "image-generation",
+    "text-to-image",
+    "image-edit"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check lib/plugin.js && node --check lib/host.js && node --check lib/runner.js && node --check lib/store.js && node --check lib/protocol.js && node --check lib/client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
