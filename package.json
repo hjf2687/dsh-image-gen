@@ -17,7 +17,8 @@
     "locale",
     "cordis.patch.yml",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "dsh",
@@ -29,6 +30,15 @@
     "image-edit"
   ],
   "license": "MIT",
+  "author": "hjf2687",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjf2687/dsh-image-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hjf2687/dsh-image-gen/issues"
+  },
+  "homepage": "https://github.com/hjf2687/dsh-image-gen#readme",
   "engines": {
     "node": ">=20"
   },
